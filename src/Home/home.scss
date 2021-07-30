@@ -6,17 +6,24 @@
   height: fit-content;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   transition: 500ms ease-in-out;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
 
   #right_sidebar {
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
     #img_cont {
       height: 400px;
       width: 400px;
@@ -33,19 +40,68 @@
         width: 250px;
         height: 250px;
       }
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    #anotherSec {
+      margin-right: 10vw;
+      width: 40%;
+      @media only screen and (max-width: 1024px) {
+        width: 90%;
+        margin: auto;
+      }
+      @media only screen and (max-width: 425px) {
+        margin: auto;
+        padding: 10px;
+      }
     }
   }
 
   #what {
+    font-size: 50px;
+    width: fit-content;
+    border-bottom: 2px solid hsl(0, 0%, 30%);
     animation: left var(--time) cubic-bezier(0.215, 0.61, 0.355, 1);
+    @media only screen and (max-width: 1024px) {
+      margin: auto;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
   }
 
-  #email {
+  #intro {
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 600;
     animation: right var(--time) cubic-bezier(0.215, 0.61, 0.355, 1);
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+    }
+    #fit {
+      width: fit-content;
+      #about {
+        width: fit-content;
+        color: hsl(170, 78%, 30%);
+        &:hover {
+          color: hsl(170, 78%, 20%);
+        }
+      }
+    }
   }
 
   #social-link {
     animation: down var(--time) cubic-bezier(0.215, 0.61, 0.355, 1);
+    @media only screen and (max-width: 1024px) {
+      width: fit-content;
+      margin: auto;
+    }
     .icon {
       --hue: 120;
       --saturation: 1%;

@@ -14,7 +14,7 @@ const Blog = () => {
   );
 
   return (
-    <div id="blog" className="slide">
+    <div id="blog" className="scroll">
       <Search search={setSeacrh} />
       <Blogui blogs={filterMyBlogs} />
     </div>

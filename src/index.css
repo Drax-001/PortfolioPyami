@@ -25,14 +25,14 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #85c5fa;
-  color: #0f2980;
+  background-color: #118874;
+  color: white;
   /* color: hsl(170, 78%, 34%); */
 }
 
 ::selection {
-  background-color: #85c5fa;
-  color: #0f2980;
+  background-color: #118874;
+  color: white;
   /* color: hsl(170, 78%, 34%); */
 }
 
@@ -71,21 +71,21 @@ img {
   border-radius: inherit;
 }
 
-.zoom {
+.scroll {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  -webkit-animation: zoom 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation: zoom 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: slide 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation: slide 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .slide {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  -webkit-animation: slide 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation: slide 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation: zoom 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation: zoom 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes zoom {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -93,17 +93,39 @@ img {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

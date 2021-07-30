@@ -6,7 +6,7 @@ const Skill = () => {
   const [skills, setSkills] = useState(mySkills);
 
   return (
-    <div id="skills" className="slide">
+    <div id="skills" className="scroll">
       <h1 className="heading">My Skills</h1>
       <div id="skill_cont">
         {skills.map((myskill) => {

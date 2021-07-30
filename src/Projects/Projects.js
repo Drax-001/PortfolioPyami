@@ -29,7 +29,7 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="slide">
+    <div id="projects" className="scroll">
       <h1 className="heading">My Projects</h1>
       <div id="top">
         <button id="prev" className="pageTurn" onClick={() => previousPage()}>

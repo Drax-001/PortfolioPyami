@@ -5,7 +5,7 @@ import "./nav.css";
 const Nav = () => {
   return (
     <nav>
-      <Link className="name underline" to="/">
+      <Link className="name" to="/">
         Pyami <span className="highlight">Prajapati</span>{" "}
       </Link>
       <div className="nav_links">

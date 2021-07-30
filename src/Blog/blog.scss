@@ -1,5 +1,8 @@
 #blog {
   padding: 10px;
+  @media only screen and (max-width: 624px) {
+    margin-top: 15vh;
+  }
   #search_box {
     display: flex;
     justify-content: flex-start;

@@ -6,6 +6,8 @@ import Projects from "./Projects/Projects";
 import Error from "./Error/Error";
 import Nav from "./Navbar/Nav";
 import Blog from "./Blog/Blog";
+import Contact from "./Home/Contact/Contact";
+import About from "./Home/About/About";
 
 const Main = () => {
   return (
@@ -17,6 +19,12 @@ const Main = () => {
         </Route>
         <Route path="/skills">
           <Skill />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/projects">
           <Projects />

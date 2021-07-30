@@ -1,6 +1,8 @@
 #contact {
   background-color: #fff;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
   margin-top: 10vh;
   -webkit-box-shadow: 2px 4px 3px 2px #4d4d4d;
@@ -23,6 +25,13 @@
           flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+  #contact {
+    width: 80%;
+    margin-top: 15vh;
+  }
+}
+
 #contact table {
   font-family: "cascadia code", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -37,6 +46,26 @@
   text-align: left;
   padding: 8px;
   height: 45px;
+}
+
+@media only screen and (max-width: 425px) {
+  #contact td,
+  #contact th {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 #contact tr:nth-child(even) {

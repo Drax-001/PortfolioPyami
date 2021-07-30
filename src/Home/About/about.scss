@@ -29,6 +29,19 @@
       .link-other {
         font-weight: 600;
       }
+      #fit {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #about {
+          width: fit-content;
+          color: hsl(170, 78%, 30%);
+          &:hover {
+            color: hsl(170, 78%, 20%);
+          }
+        }
+      }
     }
   }
 }

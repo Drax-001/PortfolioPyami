@@ -21,10 +21,10 @@ export const blogs = [
   {
     id: 352,
     title: "Getting started with reactJs",
-    link: "",
-    publishDate: "___",
-    status: incomplete,
-    readingTime: "___",
+    link: "https://pyami.medium.com/learn-react-from-scratch-c263244a73f2",
+    publishDate: "Jul 30",
+    status: complete,
+    readingTime: "9",
   },
   {
     id: 87544,
