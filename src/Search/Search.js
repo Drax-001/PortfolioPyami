@@ -15,7 +15,7 @@ export default function Search({ text, length, searchtext }) {
     } else {
       setLength(`${length} projects`);
     }
-  }, [length]);
+  }, [length, text]);
 
   return (
     <div className="searchBox">
