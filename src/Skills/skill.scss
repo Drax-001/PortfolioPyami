@@ -1,94 +1,41 @@
-$intermediate: 50%;
-$basic: 20%;
-$learning: 45%;
-$master: 100%;
-
-#skills {
+.skills_dark {
   width: 100%;
-  height: fit-content;
-  @media only screen and(max-width: 624px) {
-    margin-top: 10vh;
-  }
-}
-
-#skill_cont {
+  height: 90vh;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 30px;
-}
+  .heading {
+    color: hsl(0, 0%, 90%);
+  }
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #skill {
+      margin-left: 5rem;
+      margin-right: 5rem;
+      .skill_image {
+        width: 150px;
+        height: fit-content;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
 
-.skill-card {
-  height: 20px;
-  color: hsl(221, 65%, 20%);
-  font-size: 15px;
-  width: 300px;
-  margin: 20px 10px 20px 10px;
-  padding: 2px;
-  border-radius: 10px;
-  background-color: #fff;
-  position: relative;
-  box-shadow: 5px 8px 3px 2px hsl(0, 0%, 50%);
-}
-
-.skill_name {
-  position: relative;
-  top: -100%;
-  z-index: 1;
-  margin-left: 20px;
-}
-
-.filled {
-  position: relative;
-  height: 100%;
-  top: -190%;
-  z-index: 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px 2px hsl(0, 0%, 53%);
-  transition: 2s ease-in-out;
-  animation: fill 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.intermediate {
-  width: $intermediate;
-  background-image: linear-gradient(
-    to bottom left,
-    hsl(157, 10%, 80%),
-    hsl(157, 71%, 55%)
-  );
-}
-
-.basic {
-  width: $basic;
-  background-image: linear-gradient(
-    to bottom left,
-    hsl(224, 71%, 74%),
-    hsl(229, 71%, 55%)
-  );
-}
-
-.learning {
-  width: $learning;
-  background-image: linear-gradient(
-    to bottom left,
-    hsl(64, 72%, 74%),
-    hsl(44, 71%, 55%)
-  );
-}
-
-.master {
-  width: $master;
-  background-image: linear-gradient(
-    to bottom left,
-    hsl(106, 68%, 76%),
-    hsl(113, 71%, 55%)
-  );
-}
-
-@keyframes fill {
-  0% {
-    width: 0%;
+    .arrowCont {
+      font-size: 3rem;
+      color: #fff;
+      cursor: pointer;
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        color: hsl(162, 50%, 58%);
+      }
+    }
   }
 }

@@ -28,7 +28,7 @@ export const data = [
     name: "AIRBNB",
     tech: "HTML and CSS",
     category: "html/css",
-    projLink: "https://pyami.github.io/AirBnB/ ",
+    projLink: "https://pyami.github.io/AirBnB/ "
   },
   {
     id: 2,

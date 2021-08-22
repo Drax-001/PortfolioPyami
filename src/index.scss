@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 200ms ease-in-out;
 }
 
 :root {
@@ -14,10 +15,12 @@
 
 html,
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  background-color: #ccc;
+  background-color: #ccc; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -145,4 +148,14 @@ button:active {
   to {
     transform: scale(1);
   }
+}
+
+.light {
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.dark {
+  background-color: hsl(192, 6%, 17%);
+  height: 100vh;
 }

@@ -1,103 +1,69 @@
-#skills {
+.skills_dark {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media only screen and (max-width: 624px) {
-  #skills {
-    margin-top: 10vh;
-  }
+.skills_dark .heading {
+  color: #e6e6e6;
 }
 
-#skill_cont {
+.skills_dark .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.skill-card {
-  height: 20px;
-  color: #122754;
-  font-size: 15px;
-  width: 300px;
-  margin: 20px 10px 20px 10px;
-  padding: 2px;
-  border-radius: 10px;
-  background-color: #fff;
-  position: relative;
-  -webkit-box-shadow: 5px 8px 3px 2px gray;
-          box-shadow: 5px 8px 3px 2px gray;
+.skills_dark .skills #skill {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-.skill_name {
-  position: relative;
-  top: -100%;
-  z-index: 1;
-  margin-left: 20px;
+.skills_dark .skills #skill .skill_image {
+  width: 150px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.filled {
-  position: relative;
+.skills_dark .skills #skill .skill_image img {
   height: 100%;
-  top: -190%;
-  z-index: 0;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 2px 4px 2px #878787;
-          box-shadow: 0 2px 4px 2px #878787;
-  -webkit-transition: 2s ease-in-out;
-  transition: 2s ease-in-out;
-  -webkit-animation: fill 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation: fill 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.intermediate {
-  width: 50%;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#c7d1cd), to(#3bde9f));
-  background-image: linear-gradient(to bottom left, #c7d1cd, #3bde9f);
-}
-
-.basic {
-  width: 20%;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#8ea7ec), to(#3b59de));
-  background-image: linear-gradient(to bottom left, #8ea7ec, #3b59de);
-}
-
-.learning {
-  width: 45%;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#e6ec8d), to(#deb23b));
-  background-image: linear-gradient(to bottom left, #e6ec8d, #deb23b);
-}
-
-.master {
   width: 100%;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#aceb98), to(#4ede3b));
-  background-image: linear-gradient(to bottom left, #aceb98, #4ede3b);
 }
 
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-  }
+.skills_dark .skills .arrowCont {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@keyframes fill {
-  0% {
-    width: 0%;
-  }
+.skills_dark .skills .arrowCont:hover {
+  color: #5ec9a9;
 }
 /*# sourceMappingURL=skill.css.map */

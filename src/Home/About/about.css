@@ -2,6 +2,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -37,11 +47,9 @@
   letter-spacing: 2px;
   word-spacing: 4px;
   margin-top: 1.3rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
-  border-left: 0.1rem solid #000;
-  border-right: 0.1rem solid #000;
   padding: 10px;
 }
 
@@ -49,7 +57,7 @@
   font-weight: 600;
 }
 
-#about #aboutMe .info #fit {
+#about #fit {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,16 +68,107 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.4rem;
 }
 
-#about #aboutMe .info #fit #about {
+#about #fit #about {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #118874;
 }
 
-#about #aboutMe .info #fit #about:hover {
+#about #fit #about:hover {
   color: #0b5b4e;
+}
+
+#about_dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#about_dark #aboutMe {
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #about_dark #aboutMe {
+    width: 90%;
+  }
+}
+
+#about_dark #aboutMe .heading {
+  color: #e6e6e6;
+}
+
+#about_dark #aboutMe .info {
+  color: #cccccc;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  margin-top: 1.3rem;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 10px;
+}
+
+#about_dark #aboutMe .info .link-other {
+  color: #1ce3c2;
+  font-weight: 600;
+}
+
+#about_dark #fit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+}
+
+#about_dark #fit #about {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #118874;
+}
+
+#about_dark #fit #about:hover {
+  color: #16b69b;
 }
 /*# sourceMappingURL=about.css.map */

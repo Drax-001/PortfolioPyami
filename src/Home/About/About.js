@@ -2,9 +2,9 @@ import React from "react";
 import "./about.css";
 import { Link } from "react-router-dom";
 
-const About = () => {
+const About = ({ dark }) => {
   return (
-    <div id="about" className="slide">
+    <div id={dark ? "about_dark" : "about"} className="slide">
       <div id="aboutMe">
         <h1 className="heading">About Me</h1>
         <p className="info">
@@ -17,8 +17,8 @@ const About = () => {
           >
             skills
           </Link>{" "}
-          includes technologies like React, HTML, CSS, SASS, JavaScript, etc.,
-          and I want to add more to it. I have made many{" "}
+          includes technologies like React, HTML, CSS, SASS, JavaScript, etc. I
+          have made many{" "}
           <Link
             to="/projects"
             aria-label="View Projects"
@@ -30,14 +30,16 @@ const About = () => {
           using these languages.
         </p>
         <p className="info">
-          My hobbies include to code, play games and to explore. I love to take
-          on challenging tasks and to complete them no matter what.
-          <span id="fit">
-            <Link to="/contact" id="about" className="underline">
-              Contact me...
-            </Link>
-          </span>
+          I am passionate about learning new things and I love to take on
+          challenges. Apart from coding my hobbies include to play games and to
+          explore. I love a challenging task I really enjoy it because it
+          teaches me something new.
         </p>
+        <span id="fit">
+          <Link to="/contact" id="about" className="underline">
+            Contact me...
+          </Link>
+        </span>
       </div>
     </div>
   );

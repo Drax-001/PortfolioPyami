@@ -2,43 +2,50 @@ import React, { useState } from "react";
 import "./project.css";
 import { data } from "./projectList";
 import Projui from "./Projui";
+import {
+  FaRegArrowAltCircleLeft,
+  FaRegArrowAltCircleRight,
+} from "react-icons/fa";
+import Search from "../Search/Search";
 
-const Projects = () => {
+const Projects = ({ dark }) => {
   const [myProj, setMyProj] = useState(data);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [projectPerPage, setProjectPerPage] = useState(8);
+  const [searchText, setSearchText] = useState("");
 
-  const indexOfLastProject = currentPage * projectPerPage;
-  const indexOfFirstProject = indexOfLastProject - projectPerPage;
-  const projectList = myProj.slice(indexOfFirstProject, indexOfLastProject);
-
-  const previousPage = () => {
-    if (currentPage === 1) {
-      setCurrentPage(1);
-    } else {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-  const nextPage = () => {
-    const totalPages = Math.ceil(myProj.length / projectPerPage);
-    if (currentPage === totalPages) {
-      setCurrentPage(currentPage);
-    } else {
-      setCurrentPage(currentPage + 1);
-    }
-  };
+  const searched = myProj.filter((proj) =>
+    proj.category.toLowerCase().includes(searchText.toLowerCase().trim(""))
+  );
 
   return (
-    <div id="projects" className="scroll">
-      <h1 className="heading">My Projects</h1>
-      <div id="top">
-        <button id="prev" className="pageTurn" onClick={() => previousPage()}>
-          <span className="fa fa-angle-double-left" />
-        </button>
-        <Projui length={data.length} myProjects={projectList} />
-        <button id="next" className="pageTurn" onClick={() => nextPage()}>
-          <span className="fa fa-angle-double-right" />
-        </button>
+    <div id={dark ? "projects_dark" : "projects"} className="scroll">
+      <Search
+        text={searchText}
+        length={searched.length}
+        searchtext={setSearchText}
+      />
+      <div id="skills">
+        {searched.map((proj) => {
+          const { id, img, name, tech, projLink } = proj;
+          return (
+            <div key={id} className="card">
+              <h1 className="title"> {name} </h1>
+              <div className="image">
+                <img src={img} alt={name} />
+              </div>
+              <p className="tech"> {tech} </p>
+              <div id="footer">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={projLink}
+                  className="link"
+                >
+                  View
+                </a>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

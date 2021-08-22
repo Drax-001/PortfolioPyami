@@ -4,7 +4,7 @@ import { blogs } from "./blogs";
 import Blogui from "./Blogui";
 import Search from "./Search";
 
-const Blog = () => {
+const Blog = ({ dark }) => {
   const [searchBlog, setSeacrh] = useState("");
   const filterMyBlogs = blogs.filter((blog) =>
     blog.title
@@ -14,7 +14,7 @@ const Blog = () => {
   );
 
   return (
-    <div id="blog" className="scroll">
+    <div id={dark ? "blog_dark" : "blog"} className="scroll">
       <Search search={setSeacrh} />
       <Blogui blogs={filterMyBlogs} />
     </div>

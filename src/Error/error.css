@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=error.css.map */
+#error_dark {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#error_dark .heading {
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 800;
+  color: #cccccc;
+  text-align: center;
+}
+
+#error_dark .error_message {
+  margin-top: 3rem;
+  font-size: 20px;
+  color: #e6e6e6;
+}
+
+#error_dark #back_btn {
+  color: #27b48a;
+  border: 1px solid currentColor;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#error_dark #back_btn:hover {
+  background-color: #27b48a;
+  color: #fff;
+}
+
+#error {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#error .heading {
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 800;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+#error .error_message {
+  margin-top: 3rem;
+  font-size: 20px;
+  color: #333333;
+}
+
+#error #back_btn {
+  color: #15604a;
+  border: 1px solid currentColor;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#error #back_btn:hover {
+  background-color: #1e8a6a;
+  color: #fff;
+}
+/*# sourceMappingURL=error.css.map */

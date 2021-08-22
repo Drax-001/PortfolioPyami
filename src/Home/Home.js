@@ -4,7 +4,7 @@ import Image from "./Pyami.jpg";
 import { link } from "./links";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ dark }) => {
   const info = "Front End Developer";
 
   const [links, setLinks] = useState(link);
@@ -18,22 +18,28 @@ const Home = () => {
       <div id="home">
         <div id="right_sidebar">
           <div id="img_cont">
-            <img src={Image} id="pyami" alt="Pyami" />
+            <img src={Image} id={dark ? "pyami_dark" : "pyami"} alt="Pyami" />
           </div>
           <div id="anotherSec">
-            <h1 id="what"> {info} </h1>
-            <p id="intro">
+            <h1 id={dark ? "what_dark" : "what"} className="what">
+              {" "}
+              {info}{" "}
+            </h1>
+            <p id={dark ? "intro_dark" : "intro"} className="intro">
               Hi, I am an enthusiastic developer. I have been coding for years
               now and I have a handful of experience to work with. Regardless of
               the skills I also like to get envolved in various activity like
-              sports, games, reading, etc.{" "}
+              sports, games, reading, etc.
               <span id="fit">
                 <Link to="/about" id="about" className="underline">
                   Read more...
                 </Link>
               </span>
             </p>
-            <div id="social-link">
+            <div
+              className="social_link"
+              id={dark ? "social_link_dark" : "social_link"}
+            >
               {links.map((socialLink) => {
                 const { id, href, icon } = socialLink;
                 return (

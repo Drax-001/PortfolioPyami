@@ -1,7 +1,13 @@
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   height: 8vh;
   font-family: Arial;
@@ -11,43 +17,109 @@ nav {
 .name {
   font-size: 28px;
   font-weight: 700;
-}
-
-.name {
   text-decoration: none;
   position: relative;
 }
 
-.name::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: currentColor;
-  transition: transform 200ms ease-in-out;
-  transform: scaleX(0);
-  transform-origin: right;
+.name_dark {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  color: #b3b3b3;
+}
+
+.name_dark:hover {
+  color: white;
+}
+
+#toggle_div {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.toggle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+#toggle_div .fa {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  right: 0;
+  font-size: 20px;
+  color: #16b69b;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 a:hover {
   color: inherit;
 }
 
-.name:hover:after {
-  transform: scaleX(1);
-  transform-origin: left;
+.nav_links {
+  color: #333333;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav_links_dark {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav_links_dark .nav_link {
+  color: #b3b3b3;
+}
+
+.nav_links_dark .nav_link:hover {
+  color: white;
 }
 
 .nav_link {
+  color: #4d4d4d;
   text-decoration: none;
   position: relative;
   padding: 2px;
   margin-right: 10px;
   margin-left: 10px;
-  color: hsl(0, 0%, 40%);
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .nav_link::after {
@@ -56,34 +128,57 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease-in;
+  transition: -webkit-transform 500ms ease-in;
   transition: transform 500ms ease-in;
+  transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
   height: 2px;
   background: currentColor;
-
-  transform: scaleX(0);
-  transform-origin: center;
+  color: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
+
 .nav_link:hover::after {
-  color: hsl(0, 0%, 20%);
-  transform: scaleX(1);
-  transform-origin: center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 @media only screen and (max-width: 624px) {
   nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .nav_links {
     margin-top: 20px;
   }
+  .nav_links_dark {
+    margin-top: 20px;
+  }
 }
+
 @media only screen and (max-width: 500px) {
   nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .nav_links {
     margin-top: 20px;
   }
+  .nav_links_dark {
+    margin-top: 20px;
+  }
 }
+
+#toggle_div .moon {
+  color: black;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -7,7 +7,7 @@
   margin-top: 10vh;
   -webkit-box-shadow: 2px 4px 3px 2px #4d4d4d;
           box-shadow: 2px 4px 3px 2px #4d4d4d;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   margin-bottom: 5vh;
   padding: 0.6rem;
   display: -webkit-box;
@@ -32,47 +32,357 @@
   }
 }
 
-#contact table {
-  font-family: "cascadia code", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
+#contact .backBtn {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-#contact td,
-#contact th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  height: 45px;
+#contact .backBtn #back {
+  border: 2px solid #087d69;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: #087d69;
+  color: white;
+}
+
+#contact .backBtn #back:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#contact .socialInfoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #000;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 425px) {
-  #contact td,
-  #contact th {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #contact .socialInfoCont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 
-#contact tr:nth-child(even) {
-  background-color: #dddddd;
+#contact .socialInfoCont .titleCont {
+  width: 100px;
 }
 
-#contact .social_link {
-  color: #158456;
+#contact .socialInfoCont .socialLink {
+  color: #087d69;
+}
+
+#contact .heading {
+  font-size: 30px;
+}
+
+#contact #emailMe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact #emailMe .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact #emailMe .form .form-control {
+  width: 100%;
+  margin: auto;
+}
+
+#contact #emailMe .form .form-control .inputField {
+  width: 500px;
+  margin: 0.3rem 0.5rem;
+  height: 2rem;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+#contact #emailMe .form .form-control .inputField:focus {
+  border-color: #087d69;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact #emailMe .form .form-control .inputField {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 628px) {
+  #contact #emailMe .form .form-control .inputField {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contact #emailMe .form .form-control .inputField {
+    width: 200px;
+  }
+}
+
+#contact #emailMe .form .form-control #message {
+  height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+#contact #emailMe .form .form-control #submitForm {
+  cursor: pointer;
+  color: #e6e6e6;
+  background-color: #0cc0a2;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-color: #087d69;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+#contact #emailMe .form .form-control #submitForm:hover {
+  background-color: #099079;
+}
+
+#contact_dark {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 0.3rem;
+  margin-bottom: 5vh;
+  padding: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact_dark {
+    width: 80%;
+    margin-top: 15vh;
+  }
+}
+
+#contact_dark .backBtn {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact_dark .backBtn #back {
+  border: 2px solid #087d69;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: #087d69;
+  color: white;
+}
+
+#contact_dark .backBtn #back:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#contact_dark .socialInfoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #000;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  #contact_dark .socialInfoCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+#contact_dark .socialInfoCont .titleCont {
+  width: 100px;
+}
+
+#contact_dark .socialInfoCont .socialLink {
+  color: #087d69;
+}
+
+#contact_dark .heading {
+  font-size: 30px;
+}
+
+#contact_dark #emailMe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact_dark #emailMe .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact_dark #emailMe .form .form-control {
+  width: 100%;
+  margin: auto;
+}
+
+#contact_dark #emailMe .form .form-control .inputField {
+  width: 500px;
+  margin: 0.3rem 0.5rem;
+  height: 2rem;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+#contact_dark #emailMe .form .form-control .inputField:focus {
+  border-color: #087d69;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact_dark #emailMe .form .form-control .inputField {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 628px) {
+  #contact_dark #emailMe .form .form-control .inputField {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contact_dark #emailMe .form .form-control .inputField {
+    width: 200px;
+  }
+}
+
+#contact_dark #emailMe .form .form-control #message {
+  height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+#contact_dark #emailMe .form .form-control #submitForm {
+  cursor: pointer;
+  color: #e6e6e6;
+  background-color: #0cc0a2;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-color: #087d69;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+#contact_dark #emailMe .form .form-control #submitForm:hover {
+  background-color: #099079;
 }
 /*# sourceMappingURL=contact.css.map */

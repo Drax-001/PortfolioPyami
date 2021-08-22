@@ -1,4 +1,4 @@
-var incomplete = "In Progress";
+var incomplete = "Writing";
 var complete = "Published";
 
 export const blogs = [
@@ -29,10 +29,10 @@ export const blogs = [
   {
     id: 87544,
     title: "useRef() in react",
-    link: "",
-    publishDate: "___",
-    status: incomplete,
-    readingTime: "___",
+    link: "https://pyami.medium.com/what-is-useref-in-react-5e58c013d502",
+    publishDate: "Jul 30",
+    status: complete,
+    readingTime: "2",
   },
   {
     id: 895675,

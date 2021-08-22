@@ -1,14 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import './error.css'
+import { Link } from "react-router-dom";
 
-const Error = () => {
-    return (
-      <div>
-        <h1 className="heading">Oops!</h1>
-        <p className="error-message">We can't find the page you are lokking for</p>
-        <Link to="/" id="back_btn">Back Home</Link>
-      </div>
-    );
-}
+const Error = ({ dark }) => {
+  return (
+    <div id={dark ? "error_dark" : "error"}>
+      <h1 className="heading">Oops!</h1>
+      <p className="error_message">
+        Looks like you landed on the wrong page
+      </p>
+      <Link to="/" id="back_btn">
+        Back Home
+      </Link>
+    </div>
+  );
+};
 
-export default Error
+export default Error;

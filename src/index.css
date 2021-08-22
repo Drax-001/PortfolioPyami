@@ -6,6 +6,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 :root {
@@ -15,6 +17,8 @@
 
 html,
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background-color: #ccc;
@@ -203,5 +207,15 @@ button:active {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.light {
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.dark {
+  background-color: #292d2e;
+  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */
