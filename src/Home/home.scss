@@ -1,6 +1,4 @@
-:root {
-  --time: 2s;
-}
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Fredoka+One&family=Lato&family=Monoton&family=Press+Start+2P&family=Rampart+One&family=Staatliches&display=swap");
 
 #home {
   height: fit-content;
@@ -65,6 +63,7 @@
     width: fit-content;
     border-bottom: 2px solid hsl(0, 0%, 30%);
     animation: left var(--time) cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-family: "Fredoka One", cursive;
     @media only screen and (max-width: 1024px) {
       margin: auto;
     }
@@ -81,9 +80,20 @@
 
   #intro_dark {
     color: hsl(0, 0%, 70%);
+    #fit {
+      width: fit-content;
+      #about {
+        width: fit-content;
+        color: hsl(170, 66%, 30%);
+        &:hover {
+          color: hsl(170, 80%, 38%);
+        }
+      }
+    }
   }
 
   .intro {
+    font-family: "Lato", sans-serif;
     margin-top: 1rem;
     font-size: 20px;
     font-weight: 600;
@@ -106,6 +116,7 @@
   }
 
   #social_link_dark {
+    background-color: #292d2e;
     .icon {
       color: hsl(0, 0%, 70%);
       font-size: 30px;

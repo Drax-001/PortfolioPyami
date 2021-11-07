@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./project.css";
 import { data } from "./projectList";
-import Projui from "./Projui";
-import {
-  FaRegArrowAltCircleLeft,
-  FaRegArrowAltCircleRight,
-} from "react-icons/fa";
 import Search from "../Search/Search";
 
 const Projects = ({ dark }) => {
@@ -16,6 +11,9 @@ const Projects = ({ dark }) => {
     proj.category.toLowerCase().includes(searchText.toLowerCase().trim(""))
   );
 
+  useEffect(() => {
+    setMyProj(data);
+  }, []);
   return (
     <div id={dark ? "projects_dark" : "projects"} className="scroll">
       <Search
@@ -25,23 +23,16 @@ const Projects = ({ dark }) => {
       />
       <div id="skills">
         {searched.map((proj) => {
-          const { id, img, name, tech, projLink } = proj;
+          const { id, img, name, projLink } = proj;
           return (
-            <div key={id} className="card">
-              <h1 className="title"> {name} </h1>
-              <div className="image">
-                <img src={img} alt={name} />
-              </div>
-              <p className="tech"> {tech} </p>
-              <div id="footer">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href={projLink}
-                  className="link"
-                >
-                  View
-                </a>
+            <div className="card" key={id}>
+              <img src={img} alt={name} className="image_cont" />
+              <div className="proj_content">
+                <h2 className="title">
+                  <a href={projLink} target="_blank" rel="noreferrer">
+                    {name}
+                  </a>
+                </h2>
               </div>
             </div>
           );

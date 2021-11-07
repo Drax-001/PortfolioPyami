@@ -1,38 +1,47 @@
 export const mySkills = [
   {
     id: 58751,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/195px-HTML5_logo_and_wordmark.svg.png",
+    skill: "HTML",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxdMM9xku_hh_fntWCgJHZFbdOu417g5ruA&usqp=CAU",
   },
   {
     id: 58754,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/330px-React-icon.svg.png",
+    skill: "React",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2jma2z7jmk1gd8J1Ty4W29QlPs_lc8w1aA&usqp=CAU",
   },
   {
     id: 57755,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/330px-Expressjs.png",
+    skill: "Express",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBUUJb-R7b2boNjzx-UKDxniyupxK6x0KjNw&usqp=CAU",
   },
   {
     id: 5782,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png",
+    skill: "CSS",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf7-ZqfF1QyzT7n1MtM_ar45n1_9QanayMKw&usqp=CAU",
   },
   {
     id: 6757,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/330px-Node.js_logo.svg.png",
+    skill: "NodeJs",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOss-5sBck-fExsUuFAUI-opJuCddpjSa_A&usqp=CAU",
   },
   {
     id: 5787,
-    img: "https://imgr.search.brave.com/8_ytkI6fKRhU_c1EWYmBRYlGJDdO1apOw8zrkUHR6Pw/fit/433/225/no/1/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/Y2FSNEpLZUo5cVVP/MTliVFNtZ3l3SGFJ/RyZwaWQ9QXBp",
+    skill: "SQL",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTurEq9SK3CCsMF43Qk2HFhcSQsxT-BlvL-Ow&usqp=CAU",
   },
   {
     id: 5878,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/375px-Python_logo_and_wordmark.svg.png",
+    skill: "Python",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpuBzeqY74r4BW97A09YOYr-JOvQgk-qdFQ&usqp=CAU",
   },
   {
     id: 68753,
-    img: "https://imgr.search.brave.com/GueUrdZxRVGeHRdgwMsosBmsRZiOI61U08ZKhyWzUCc/fit/200/200/no/1/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn.svg",
+    skill: "JavaScript",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlBdvEgD7TfbroDTGn5UxBp6wsDTReeHRZbg&usqp=CAU",
   },
   {
     id: 9767,
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/330px-Sass_Logo_Color.svg.png",
+    skill: "Sass",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMQ7SdmZzfggzN7epWGwE3Rxeyz0ViVRZIw&usqp=CAU",
   },
 ];

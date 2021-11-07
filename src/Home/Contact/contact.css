@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Fredoka+One&family=Lato&family=Monoton&family=Press+Start+2P&family=Rampart+One&family=Staatliches&display=swap");
 #contact {
   background-color: #fff;
   width: -webkit-fit-content;
@@ -194,6 +195,7 @@
 }
 
 #contact_dark {
+  font-family: "Lato", cursive;
   background-color: #fff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -251,8 +253,7 @@
 }
 
 #contact_dark .backBtn #back:hover {
-  background-color: transparent;
-  color: black;
+  background-color: #086354;
 }
 
 #contact_dark .socialInfoCont {

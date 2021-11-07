@@ -17,6 +17,11 @@ export default function Skill({ dark }) {
 
   const totalPages = Math.ceil(skills.length / skillPerPage);
 
+  useEffect(() => {
+    setSkills(mySkills);
+    setSkillPerPage(3);
+  }, []);
+
   function next() {
     if (currentPage === totalPages) {
       setCurrentPage(1);
@@ -43,10 +48,12 @@ export default function Skill({ dark }) {
           const { id, skill, img } = mySkill;
           return (
             <>
-              <div id="skill" key={id}>
-                <h1 className="skill_name"> {skill} </h1>
+              <div className="skill" key={id}>
                 <div className="skill_image">
                   <img src={img} alt={skill} />
+                </div>
+                <div className="about_skill">
+                  <h2 className="skill_name"> {skill} </h2>
                 </div>
               </div>
             </>

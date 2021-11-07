@@ -8,7 +8,7 @@ const Nav = ({ dark, setDark }) => {
       <Link className={dark ? "name_dark" : "name"} to="/">
         Pyami <span className="highlight">Prajapati</span>
       </Link>
-      <div className={dark ? "nav_links_dark": "nav_links"}>
+      <div className={dark ? "nav_links_dark" : "nav_links"}>
         <Link to="/skills" className="nav_link underline">
           Skills
         </Link>

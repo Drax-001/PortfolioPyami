@@ -1,24 +1,91 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./blog.css";
-import { blogs } from "./blogs";
-import Blogui from "./Blogui";
-import Search from "./Search";
 
-const Blog = ({ dark }) => {
-  const [searchBlog, setSeacrh] = useState("");
-  const filterMyBlogs = blogs.filter((blog) =>
-    blog.title
-      .toLowerCase()
-      .trim("")
-      .includes(searchBlog.toLowerCase().trim(""))
-  );
+let url =
+  "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@pyami";
 
-  return (
-    <div id={dark ? "blog_dark" : "blog"} className="scroll">
-      <Search search={setSeacrh} />
-      <Blogui blogs={filterMyBlogs} />
-    </div>
-  );
-};
+export default function Blog({ dark }) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-export default Blog;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => {
+        if (res.status >= 200 && res.status < 299) {
+          setLoading(false);
+          return res.json();
+        } else {
+          setLoading(false);
+          throw new Error(res.statusText);
+        }
+      })
+      .then((data) => {
+        setData(data.items);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
+
+  if (loading) {
+    return (
+      <div className="loading">
+        <h1>Loading.....</h1>
+      </div>
+    );
+  } else {
+    return (
+      <>
+        {data && (
+          <>
+            {" "}
+            {dark ? (
+              <div id="blog_dark">
+                {data.map((list) => {
+                  const { title, guid, thumbnail } = list;
+                  return (
+                    <div className="blog_card" key={title}>
+                      <img className="imageCont" src={thumbnail} alt={title} />
+                      <div className="blog_content">
+                        <h2 className="blog_title">
+                          <a href={guid} target="_blank" rel="noreferrer">
+                            {title}
+                          </a>
+                        </h2>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div id="blog">
+                {data.map((list) => {
+                  const { title, guid, thumbnail } = list;
+                  return (
+                    <div className="blog_card" key={title}>
+                      <img className="imageCont" src={thumbnail} alt={title} />
+                      <div className="blog_content">
+                        <h2 className="blog_title"> {title} </h2>
+                        <p className="blog_text">
+                          {title}
+                          <a
+                            href={guid}
+                            rel="noreferrer"
+                            target="_blank"
+                            className="read"
+                          >
+                            Read more
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}{" "}
+          </>
+        )}
+      </>
+    );
+  }
+}

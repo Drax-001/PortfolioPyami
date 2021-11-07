@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Fredoka+One&family=Lato&family=Monoton&family=Press+Start+2P&family=Rampart+One&family=Staatliches&display=swap");
+
 #about {
   display: flex;
   align-items: center;
@@ -18,6 +20,12 @@
     @media only screen and (max-width: 1024px) {
       width: 90%;
     }
+
+    .heading {
+      text-shadow: 2px 2px #098f5b;
+      font-family: "Staatliches", cursive;
+    }
+
     .info {
       $borderWidth: 0.1rem;
       letter-spacing: 2px;
@@ -28,6 +36,7 @@
       font-weight: 500;
       padding: 10px;
       .link-other {
+        color: hsl(171, 87%, 25%);
         font-weight: 600;
       }
     }
@@ -38,17 +47,19 @@
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
+    font-family: "Monoton", cursive;
     #about {
       width: fit-content;
-      color: hsl(170, 78%, 30%);
+      color: hsl(170, 85%, 27%);
       &:hover {
-        color: hsl(170, 78%, 20%);
+        color: hsl(171, 54%, 28%);
       }
     }
   }
 }
 
 #about_dark {
+  font-family: "Allision", cursive;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -69,6 +80,8 @@
       width: 90%;
     }
     .heading {
+      text-shadow: 2px 2px #098f5b;
+      font-family: "Staatliches", cursive;
       color: hsl(0, 0%, 90%);
     }
 
@@ -78,7 +91,6 @@
       letter-spacing: 2px;
       word-spacing: 4px;
       margin-top: 1.3rem;
-      font-family: sans-serif, Arial, Helvetica, sans-serif;
       font-size: 1.2em;
       font-weight: 500;
       padding: 10px;
@@ -94,11 +106,12 @@
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
+    font-family: "Monoton", cursive;
     #about {
       width: fit-content;
-      color: hsl(170, 78%, 30%);
+      color: hsl(170, 68%, 39%);
       &:hover {
-        color: hsl(170, 78%, 40%);
+        color: hsl(170, 83%, 43%);
       }
     }
   }

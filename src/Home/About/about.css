@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Fredoka+One&family=Lato&family=Monoton&family=Press+Start+2P&family=Rampart+One&family=Staatliches&display=swap");
 #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +44,11 @@
   }
 }
 
+#about #aboutMe .heading {
+  text-shadow: 2px 2px #098f5b;
+  font-family: "Staatliches", cursive;
+}
+
 #about #aboutMe .info {
   letter-spacing: 2px;
   word-spacing: 4px;
@@ -54,6 +60,7 @@
 }
 
 #about #aboutMe .info .link-other {
+  color: #087767;
   font-weight: 600;
 }
 
@@ -69,20 +76,22 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.4rem;
+  font-family: "Monoton", cursive;
 }
 
 #about #fit #about {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #118874;
+  color: #0a7f6c;
 }
 
 #about #fit #about:hover {
-  color: #0b5b4e;
+  color: #216e62;
 }
 
 #about_dark {
+  font-family: "Allision", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +137,8 @@
 }
 
 #about_dark #aboutMe .heading {
+  text-shadow: 2px 2px #098f5b;
+  font-family: "Staatliches", cursive;
   color: #e6e6e6;
 }
 
@@ -136,7 +147,6 @@
   letter-spacing: 2px;
   word-spacing: 4px;
   margin-top: 1.3rem;
-  font-family: sans-serif, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
   padding: 10px;
@@ -159,16 +169,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.4rem;
+  font-family: "Monoton", cursive;
 }
 
 #about_dark #fit #about {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #118874;
+  color: #20a791;
 }
 
 #about_dark #fit #about:hover {
-  color: #16b69b;
+  color: #13c9aa;
 }
 /*# sourceMappingURL=about.css.map */

@@ -28,7 +28,7 @@ export const data = [
     name: "AIRBNB",
     tech: "HTML and CSS",
     category: "html/css",
-    projLink: "https://pyami.github.io/AirBnB/ "
+    projLink: "https://pyami.github.io/AirBnB/ ",
   },
   {
     id: 2,
@@ -89,7 +89,7 @@ export const data = [
   {
     id: 9,
     img: portfolio,
-    name: "PORTFOLIO",
+    name: "PORTFOLIO BOOTSTRAP",
     tech: "HTML and BOOTSTRAP",
     category: "html/bootstrap",
     projLink: "https://pyami.github.io/Portfolio-Bootstrap/index.html",

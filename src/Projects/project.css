@@ -1,67 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Fredoka+One&family=Lato&family=Monoton&family=Press+Start+2P&family=Rampart+One&family=Staatliches&display=swap");
 #projects_dark {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #292d2e;
-}
-
-#projects_dark #skills {
-  width: 90%;
-  margin: auto;
-  margin-top: 2rem;
-  background-color: #292d2e;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 1024px) {
-  #projects_dark #skills {
-    width: 100%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2rem;
-  }
-}
-
-#projects_dark #skills .card {
-  width: 400px;
-  height: 300px;
-  padding: 10px;
-  margin: 10px 20px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,48 +16,148 @@
           flex-direction: column;
 }
 
-@media only screen and (max-width: 625px) {
-  #projects_dark #skills .card {
-    width: 300px;
-  }
+#projects_dark #skills {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+  width: 80%;
 }
 
-#projects_dark #skills .card .title {
-  text-align: center;
-}
-
-#projects_dark #skills .card .image {
-  width: 90%;
-  height: 70%;
-  -webkit-box-shadow: 0 2px 4px 2px gray;
-          box-shadow: 0 2px 4px 2px gray;
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 625px) {
-  #projects_dark #skills .card .image {
-    width: 100%;
-  }
-}
-
-#projects_dark #skills .card .tech {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 6px;
-  font-weight: 600;
-  width: 100%;
-  border-bottom: 1px solid gray;
-}
-
-#projects_dark #skills .card .link {
-  font-weight: 600;
-  font-size: 20px;
+#projects_dark #skills .card {
+  overflow: hidden;
+  margin: 20px;
   position: relative;
-  padding: 2px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  width: 350px;
+  height: 220px;
 }
 
-#projects_dark #skills .card .link:hover {
-  color: #13966a;
+#projects_dark #skills .card .image_cont {
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#projects_dark #skills .card:hover {
+  -webkit-transition: all 450ms ease-in-out 0s;
+  transition: all 450ms ease-in-out 0s;
+  -webkit-box-shadow: 0 2px 35px rgba(0, 0, 0, 0.85);
+          box-shadow: 0 2px 35px rgba(0, 0, 0, 0.85);
+}
+
+#projects_dark #skills .card:hover .proj_content {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#projects_dark #skills .card:hover .proj_content .title {
+  color: #1d1b1b;
+}
+
+#projects_dark #skills .card .proj_content {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px 12px;
+  overflow: hidden;
+  -webkit-transition: all 450ms ease-in-out 0s;
+  transition: all 450ms ease-in-out 0s;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#projects_dark #skills .card .proj_content .title {
+  height: 60px;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 10px;
+  -webkit-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
+  color: #3c3e3f;
+}
+
+#search_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 624px) {
+  #search_box {
+    margin-top: 5vh;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #search_box {
+    width: 95%;
+  }
+}
+
+#search_box .lens {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#search_box #search_bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  padding: 4px;
+  background-color: transparent;
+  font-weight: 650;
+  font-family: Arial;
 }
 
 #projects {
@@ -128,6 +167,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -135,57 +177,26 @@
 }
 
 #projects #skills {
-  width: 90%;
   margin: auto;
-  margin-top: 2rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 1024px) {
-  #projects #skills {
-    width: 100%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2rem;
-  }
+  margin-top: 3rem;
+  width: 80%;
 }
 
 #projects #skills .card {
-  width: 400px;
-  height: 300px;
-  padding: 10px;
-  margin: 10px 20px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 2px solid #0d684a;
-  -webkit-box-shadow: 0 2px 4px 2px gray;
-          box-shadow: 0 2px 4px 2px gray;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,49 +210,61 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #fff;
+  width: 350px;
+  height: 220px;
 }
 
-@media only screen and (max-width: 625px) {
-  #projects #skills .card {
-    width: 300px;
-  }
+#projects #skills .card .image_cont {
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-#projects #skills .card .title {
-  text-align: center;
+#projects #skills .card:hover {
+  -webkit-transition: all 450ms ease-in-out 0s;
+  transition: all 450ms ease-in-out 0s;
+  -webkit-box-shadow: 0 2px 35px rgba(0, 0, 0, 0.85);
+          box-shadow: 0 2px 35px rgba(0, 0, 0, 0.85);
 }
 
-#projects #skills .card .image {
-  width: 90%;
-  height: 70%;
-  -webkit-box-shadow: 0 2px 4px 2px gray;
-          box-shadow: 0 2px 4px 2px gray;
-  border-radius: 10px;
+#projects #skills .card:hover .proj_content {
+  background: rgba(255, 255, 255, 0.9);
 }
 
-@media only screen and (max-width: 625px) {
-  #projects #skills .card .image {
-    width: 100%;
-  }
+#projects #skills .card:hover .proj_content .title {
+  color: #1d1b1b;
 }
 
-#projects #skills .card .tech {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 6px;
-  font-weight: 600;
-  width: 100%;
-  border-bottom: 1px solid gray;
-}
-
-#projects #skills .card .link {
-  font-weight: 600;
-  font-size: 20px;
+#projects #skills .card .proj_content {
   position: relative;
-  padding: 2px 10px;
+  top: 50%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px 12px;
+  overflow: hidden;
+  -webkit-transition: all 450ms ease-in-out 0s;
+  transition: all 450ms ease-in-out 0s;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
 }
 
-#projects #skills .card .link:hover {
-  color: #13966a;
+#projects #skills .card .proj_content .title {
+  height: 60px;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 10px;
+  -webkit-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
+  color: #3c3e3f;
 }
 /*# sourceMappingURL=project.css.map */

@@ -22,17 +22,16 @@ const Home = ({ dark }) => {
           </div>
           <div id="anotherSec">
             <h1 id={dark ? "what_dark" : "what"} className="what">
-              {" "}
-              {info}{" "}
+              {info}
             </h1>
             <p id={dark ? "intro_dark" : "intro"} className="intro">
-              Hi, I am an enthusiastic developer. I have been coding for years
-              now and I have a handful of experience to work with. Regardless of
-              the skills I also like to get envolved in various activity like
-              sports, games, reading, etc.
+              Hey there! I am an enthusiastic developer. I have been coding for
+              years now and I have a handful of tools to work with. Regardless
+              of my skills I also like to get envolved in various different
+              activity like sports, games, reading, etc.
               <span id="fit">
                 <Link to="/about" id="about" className="underline">
-                  Read more...
+                  Know more about me....
                 </Link>
               </span>
             </p>
